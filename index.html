@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Speed Racer</title>
+  <!-- Librerias -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+  <!-- AGREGAR DEBAJO EL CÓDIGO SDK DE FIREBASE -->
+  <script>
+    const firebaseConfig = {
+  apiKey: "AIzaSyC6qBTMjGY6WsYZWcAVt--B0nYgCSHI4MI",
+  authDomain: "bd-multijugador.firebaseapp.com",
+  databaseURL: "https://bd-multijugador-default-rtdb.firebaseio.com",
+  projectId: "bd-multijugador",
+  storageBucket: "bd-multijugador.appspot.com",
+  messagingSenderId: "747049135674",
+  appId: "1:747049135674:web:927af0d5f806d2a14b0f03"
+  }; 
+  firebase.initializeApp(firebaseConfig);//fundamental
+  </script>
+    
+</head>
+
+<body>
+
+  <script src="./sketch.js"></script>
+</body>
+
+</html>
